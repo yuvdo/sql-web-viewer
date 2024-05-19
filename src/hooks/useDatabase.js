@@ -13,7 +13,7 @@ export const useDatabase = () => {
     const isDev = process.env.NODE_ENV === 'development';
 
     useEffect(() => {
-        let sqlWorker = new Worker('/worker.sql-wasm.js');
+        let sqlWorker = new Worker('worker.sql-wasm.js');
 
         if (isDev)
             sqlWorker.onerror = (err) => console.log(`SQL Worker Error: ${err}`);

@@ -1,6 +1,7 @@
 {
   "name": "sql-viewer",
   "version": "0.1.0",
+  "homepage": ".",
   "private": true,
   "dependencies": {
     "@monaco-editor/react": "^4.1.3",
